@@ -6,7 +6,7 @@ import { Video } from './models/video.model';
 
 export const YOUTUBE_API_URL: string = 'https://www.googleapis.com/youtube/v3';
 export const YOUTUBE_API_KEY: string =
-  'AIzaSyBISDJSAjwC_OQ7Y7cHkZARBDO8dqYH7_A';
+  'KeyCode';
 
 @Injectable({
   providedIn: 'root',
