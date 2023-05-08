@@ -1,0 +1,8 @@
+<div class="home-container">
+  <app-video
+    (click)="handleClick(video.videoId)"
+    *ngFor="let video of videos | async"
+    [video]="video"
+    [row]="false"
+  ></app-video>
+</div>

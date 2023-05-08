@@ -1,0 +1,14 @@
+<div *ngIf="video | async as v">
+  <iframe
+    allowfullscreen="allowfullscreen"
+    id="player"
+    type="text/html"
+    width="100%"
+    height="70%"
+    [src]="getSrcUrl(v[0].videoId)"
+    frameborder="0"
+  ></iframe>
+  <h2>{{ v[0].title }}</h2>
+  <h4 style="display: inline; margin-right: 10px">{{ v[0].channelTitle }}</h4>
+  <p style="display: inline">{{ v[0].publishedAt | date }}</p>
+</div>
